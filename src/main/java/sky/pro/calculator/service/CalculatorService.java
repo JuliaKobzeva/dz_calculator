@@ -10,19 +10,19 @@ public class CalculatorService {
         System.out.println("Добро пожаловать в калькулятор");
     }
 
-    public int plus(Integer num1, Integer num2) {
+    public Integer plus(Integer num1, Integer num2) {
         return num1 + num2;
     }
 
-    public int minus(Integer num1, Integer num2) {
+    public Integer minus(Integer num1, Integer num2) {
         return num1 - num2;
     }
 
-    public int multiply(Integer num1, Integer num2) {
+    public Integer multiply(Integer num1, Integer num2) {
         return num1 * num2;
     }
 
-    public int divide(Integer num1, Integer num2) {
+    public Integer divide(Integer num1, Integer num2) {
         return num1 / num2;
     }
 }
