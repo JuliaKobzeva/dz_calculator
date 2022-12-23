@@ -13,28 +13,28 @@ public class CalculatorServiceParameterizedTest {
     private static final Integer NUM2 = 2;
 
     @ParameterizedTest
-    @MethodSource("provadeParamsForTest")
+    @MethodSource("provideParamsForTest")
     public void shouldNumsEqualsWhenPlus2(Integer integer1, Integer integer2){
         calculatorService = new CalculatorService();
         Assertions.assertEquals(calculatorService.plus(integer1,integer2), integer1+integer2);
     }
 
     @ParameterizedTest
-    @MethodSource("provadeParamsForTest")
+    @MethodSource("provideParamsForTest")
     public void shouldNumsEqualsWhenMinus2(Integer integer1, Integer integer2){
         calculatorService = new CalculatorService();
         Assertions.assertEquals(calculatorService.minus(integer1,integer2), integer1-integer2);
     }
 
     @ParameterizedTest
-    @MethodSource("provadeParamsForTest")
+    @MethodSource("provideParamsForTest")
     public void shouldNumsEqualsWhenMultiply2(Integer integer1, Integer integer2){
         calculatorService = new CalculatorService();
         Assertions.assertEquals(calculatorService.multiply(integer1,integer2), integer1*integer2);
     }
 
     @ParameterizedTest
-    @MethodSource("provadeParamsForTest")
+    @MethodSource("provideParamsForTest")
     public void shouldNumsEqualsWhenDivide2(Integer integer1, Integer integer2){
         calculatorService = new CalculatorService();
         Assertions.assertEquals(calculatorService.divide(integer1,integer2), integer1/integer2);
