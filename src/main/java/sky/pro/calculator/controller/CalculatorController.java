@@ -15,7 +15,7 @@ public class CalculatorController {
         this.calculatorService = calculatorService;
     }
 
-    @GetMapping("")
+    @GetMapping
     public void sayHello(){
         this.calculatorService.sayHello();
     }
