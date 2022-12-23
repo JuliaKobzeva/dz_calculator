@@ -43,5 +43,4 @@ public class CalculatorServiceParameterizedTest {
     public static Stream<Arguments> provideParamsForTest(){
         return Stream.of(Arguments.of(NUM1,NUM2),Arguments.of(25,45),Arguments.of(-125,-25));
     }
-
 }

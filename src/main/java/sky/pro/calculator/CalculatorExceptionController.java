@@ -15,4 +15,5 @@ public class CalculatorExceptionController {
     public ResponseEntity<Object> divisionByZeroException (IllegalArgumentException exception){
         return new ResponseEntity<>(exception.getMessage(), HttpStatus.BAD_REQUEST);
     }
+
 }

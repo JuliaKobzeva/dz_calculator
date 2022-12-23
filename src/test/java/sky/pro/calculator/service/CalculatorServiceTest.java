@@ -42,5 +42,4 @@ public class CalculatorServiceTest {
         Assertions.assertThrows(IllegalArgumentException.class,
                 () -> calculatorService.divide(NUM1,ILLEGAL_ARGUMENT));
     }
-
 }
